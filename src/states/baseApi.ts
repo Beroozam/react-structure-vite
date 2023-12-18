@@ -23,7 +23,7 @@ const baseQuery: Fn = async ({ url, method, data, headers, params, fullResult=fa
     return { data: fullResult?result:result.data }
   }
   catch (axiosError) {
-    let err = axiosError as AxiosError
+    const err = axiosError as AxiosError
     return {
       error: {
         status: err.response?.status,
