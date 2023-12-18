@@ -11,7 +11,7 @@ import {
 import { useMediaQuery } from 'react-responsive';
 
 function useResponsiveLayoutSelector(){
-    const isMobile = useMediaQuery({maxWidth: 767,})
+    const isMobile = useMediaQuery({maxWidth: 767})
 
     return {
         home:isMobile ? <SharedLayout><HomeMobile /></SharedLayout> : <HomeDesktop />,

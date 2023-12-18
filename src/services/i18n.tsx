@@ -32,3 +32,4 @@ i18next
         resources,
         lng:"en",// default language
     })
+    .then(()=>{})

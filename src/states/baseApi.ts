@@ -1,5 +1,4 @@
-import {BaseQueryFn} from "@reduxjs/toolkit/dist/query/react";
-import {createApi} from "@reduxjs/toolkit/query/react";
+import {createApi,BaseQueryFn} from "@reduxjs/toolkit/query/react";
 import axios, {AxiosError, AxiosRequestConfig} from "axios";
 
 type Fn = BaseQueryFn<
