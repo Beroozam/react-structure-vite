@@ -5,7 +5,7 @@ import tailwindcss from 'tailwindcss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),svgr()],
+  plugins: [react(),svgr({include:"**/*.svg"})],
   css:{
     postcss:{
       plugins:[tailwindcss()]
